@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>謝坤達公益足跡 2002–2026</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;900&display=swap">
+<style>
+:root{--bg:#f6f7fa;--surface:#fff;--ink:#14213d;--muted:#5b6478;--line:#dfe3ec;--accent:#2f5bea;--accent-soft:#e7edff;--mark:#f2b705;--ok:#1c7c54;--ok-soft:#dff3ea;--wait:#a15c00;--wait-soft:#fff0d6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1424;--surface:#161e33;--ink:#eef1f8;--muted:#9aa4bb;--line:#26304a;--accent:#7d9bff;--accent-soft:#1c2748;--mark:#f2b705;--ok:#6fd3a5;--ok-soft:#14352a;--wait:#f2b75b;--wait-soft:#3a2b0f}}
+:root[data-theme="dark"]{--bg:#0e1424;--surface:#161e33;--ink:#eef1f8;--muted:#9aa4bb;--line:#26304a;--accent:#7d9bff;--accent-soft:#1c2748;--mark:#f2b705;--ok:#6fd3a5;--ok-soft:#14352a;--wait:#f2b75b;--wait-soft:#3a2b0f}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.75 "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{padding:48px 0 24px}
+h1{font:900 clamp(30px,6vw,46px)/1.25 "Noto Serif TC","Songti TC",serif;margin:0 0 10px;letter-spacing:.02em}
+.lead{color:var(--muted);margin:0;max-width:34em}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin:24px 0 0}
+.stat b{display:block;font:900 30px/1.2 "Noto Serif TC",serif}
+.stat span{color:var(--muted);font-size:14px}
+.tools{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:12px 0;border-bottom:1px solid var(--line)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+input[type=search],select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:9px 12px;min-height:44px}
+input[type=search]{width:100%}
+select{flex:1 1 140px}
+.chip{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;min-height:36px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+.count{color:var(--muted);font-size:14px;margin:14px 0 0}
+.year{display:grid;grid-template-columns:84px 1fr;gap:0 18px;margin-top:34px}
+.ylab{font:900 30px/1.2 "Noto Serif TC",serif;position:sticky;top:calc(env(safe-area-inset-top,0px) + 150px);align-self:start;border-top:4px solid var(--mark);padding-top:6px}
+.items{display:grid;gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:14px 16px}
+.card h3{margin:0 0 4px;font-size:17px;line-height:1.5}
+.meta{color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:4px 12px}
+.card p{margin:8px 0 0;font-size:15px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.tag{font-size:12.5px;padding:2px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.tag.ok{background:var(--ok-soft);color:var(--ok)}
+.tag.wait{background:var(--wait-soft);color:var(--wait)}
+.src{font-size:14px;margin-left:auto}
+.empty{padding:48px 0;text-align:center;color:var(--muted)}
+.note{margin:48px 0 0;padding:18px 20px;border:1px dashed var(--line);border-radius:8px;color:var(--muted);font-size:14px}
+footer{padding:28px 0 56px;color:var(--muted);font-size:14px}
+@media (max-width:560px){.year{grid-template-columns:1fr}.ylab{position:static;font-size:26px;margin-bottom:10px;width:84px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>謝坤達公益足跡</h1>
+  <p class="lead">整理謝坤達自 2002 年 Energy 出道以來參與的公益活動，每一筆都附上資料來源，歡迎一起查證與補充。</p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="tools">
+  <label for="q" class="sr" style="position:absolute;left:-9999px">搜尋</label>
+  <input type="search" id="q" placeholder="搜尋活動名稱、單位、地點…">
+  <div class="row">
+    <select id="year" aria-label="年份"><option value="">所有年份</option></select>
+    <select id="type" aria-label="活動類型"><option value="">所有類型</option></select>
+    <span id="idchips"></span>
+  </div>
+</div>
+
+<p class="count" id="count" aria-live="polite"></p>
+<main id="list"></main>
+
+<div class="note" id="sample-note" hidden>目前顯示的是版面示範用的範例資料，並非真實紀錄。正式資料會從 Google 試算表讀取。</div>
+</div>
+<footer><div class="wrap">資料依公開報導與官方來源整理，若有錯誤或可補充的資料，請<a id="fix" href="#">透過表單告訴我們</a>。</div></footer>
+
+<script>
+// ===== 設定區：上線時只需要改這裡 =====
+var CONFIG = {
+  SHEET_CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQcINATbuldmeWv1E0_CwQnzL0jdKhNrCKin2I8eQqOpnkRXhyBnsjHKs6t2h0ms8xUxd3qTKu5leBV/pub?gid=0&single=true&output=csv",   // Google 試算表「發布到網路」的 CSV 連結；留空則顯示範例資料
+  FEEDBACK_URL: "https://forms.gle/kSV7HDitrZdtTwiD8"    // 勘誤/補充用的 Google 表單連結
+};
+// 試算表欄位順序：日期,活動名稱,主辦單位,類型,地點,身分,參與形式,內容簡述,成果,來源連結,來源類型,狀態
+var SAMPLE = [
+ ["2002-12-24","範例活動 A（示範用）","範例基金會","捐款義賣","台北","Energy 團體","出席","這是示範資料，用來展示版面。","","","新聞","待查證"],
+ ["2006-03-12","範例活動 B（示範用）","範例協會","愛心探訪","台中","個人","志工","這是示範資料，用來展示版面。","","https://example.com","官方社群","已查證"],
+ ["2006-08-20","範例活動 C（示範用）","範例單位","義演","高雄","Energy 團體","表演","這是示範資料，用來展示版面。","","","影片","待查證"],
+ ["2015-05-09","範例活動 D（示範用）","範例基金會","代言與宣導","台北","個人","擔任代言人","這是示範資料，用來展示版面。","","https://example.com","新聞","已查證"],
+ ["2024-11-02","範例活動 E（示範用）","範例協會","賑災","全台","個人","捐款","這是示範資料，用來展示版面。","","","機構官網","待查證"]
+];
+var KEYS=["date","name","org","type","place","identity","role","summary","result","url","stype","status"];
+var data=[],state={q:"",year:"",type:"",id:""};
+var $=function(s){return document.querySelector(s)};
+
+function parseCSV(t){var r=[],row=[],f="",q=false;for(var i=0;i<t.length;i++){var c=t[i];
+ if(q){if(c=='"'){if(t[i+1]=='"'){f+='"';i++}else q=false}else f+=c}
+ else if(c=='"')q=true;else if(c==","){row.push(f);f=""}
+ else if(c=="\n"){row.push(f);r.push(row);row=[];f=""}else if(c!="\r")f+=c}
+ if(f||row.length){row.push(f);r.push(row)}return r}
+var HMAP={"日期":"date","活動名稱":"name","主辦單位":"org","類型":"type","地點":"place","身分":"identity","參與形式":"role","內容簡述":"summary","成果":"result","來源連結":"url","來源類型":"stype","狀態":"status"};
+function toObjs(rows,head){var ks=head?head.map(function(h){return HMAP[h.trim()]||null}):KEYS;
+ return rows.filter(function(r){return r[0]&&r[1]}).map(function(r){var o={};KEYS.forEach(function(k){o[k]=""});ks.forEach(function(k,i){if(k)o[k]=(r[i]||"").trim()});o.year=o.date.slice(0,4);return o})}
+function esc(s){return s.replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function safeUrl(u){return /^https?:\/\//.test(u)?u:""}
+
+function load(){
+  if(!CONFIG.SHEET_CSV_URL){data=toObjs(SAMPLE);$("#sample-note").hidden=false;init();return}
+  fetch(CONFIG.SHEET_CSV_URL).then(function(r){return r.text()}).then(function(t){
+    var rows=parseCSV(t);var head=rows.shift();data=toObjs(rows,head);init()
+  }).catch(function(){$("#list").innerHTML='<div class="empty">資料載入失敗，請稍後重新整理頁面。</div>'})
+}
+function uniq(k){return Array.from(new Set(data.map(function(d){return d[k]}).filter(Boolean))).sort()}
+function init(){
+  $("#fix").href=CONFIG.FEEDBACK_URL;
+  uniq("year").forEach(function(y){$("#year").insertAdjacentHTML("beforeend","<option>"+y+"</option>")});
+  uniq("type").forEach(function(y){$("#type").insertAdjacentHTML("beforeend","<option>"+esc(y)+"</option>")});
+  ["全部"].concat(uniq("identity")).forEach(function(n){
+    var b=document.createElement("button");b.className="chip";b.textContent=n;b.setAttribute("aria-pressed",n=="全部");
+    b.onclick=function(){state.id=n=="全部"?"":n;document.querySelectorAll(".chip").forEach(function(x){x.setAttribute("aria-pressed",x==b)});render()};
+    $("#idchips").appendChild(b)});
+  $("#q").oninput=function(e){state.q=e.target.value.trim().toLowerCase();render()};
+  $("#year").onchange=function(e){state.year=e.target.value;render()};
+  $("#type").onchange=function(e){state.type=e.target.value;render()};
+  var yrs=uniq("year");
+  $("#stats").innerHTML=[[data.length,"筆活動"],[uniq("org").length,"個合作單位"],[yrs.length?yrs[0]+"–"+yrs[yrs.length-1]:"–","涵蓋年份"]].map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+s[1]+'</span></div>'}).join("");
+  render()
+}
+function render(){
+  var list=data.filter(function(d){
+    if(state.year&&d.year!=state.year)return false;
+    if(state.type&&d.type!=state.type)return false;
+    if(state.id&&d.identity!=state.id)return false;
+    if(state.q&&(d.name+d.org+d.place+d.summary+d.role).toLowerCase().indexOf(state.q)<0)return false;
+    return true}).sort(function(a,b){return a.date<b.date?-1:1});
+  $("#count").textContent="共 "+list.length+" 筆";
+  if(!list.length){$("#list").innerHTML='<div class="empty">沒有符合的活動，試著放寬篩選條件。</div>';return}
+  var g={};list.forEach(function(d){(g[d.year]=g[d.year]||[]).push(d)});
+  $("#list").innerHTML=Object.keys(g).sort().map(function(y){
+    return '<section class="year"><div class="ylab">'+y+'</div><div class="items">'+g[y].map(card).join("")+'</div></section>'}).join("")
+}
+function card(d){
+  var u=safeUrl(d.url),ok=d.status=="已查證";
+  return '<article class="card"><h3>'+esc(d.name)+'</h3><div class="meta"><span>'+esc(d.date)+'</span>'+
+   (d.org?'<span>'+esc(d.org)+'</span>':'')+(d.place?'<span>'+esc(d.place)+'</span>':'')+(d.role?'<span>'+esc(d.role)+'</span>':'')+'</div>'+
+   (d.summary?'<p>'+esc(d.summary)+'</p>':'')+(d.result?'<p>成果：'+esc(d.result)+'</p>':'')+
+   '<div class="tags"><span class="tag">'+esc(d.type)+'</span><span class="tag">'+esc(d.identity)+'</span><span class="tag '+(ok?'ok':'wait')+'">'+(ok?'已查證':'待查證')+'</span>'+
+   (u?'<a class="src" href="'+esc(u)+'" target="_blank" rel="noopener">來源：'+esc(d.stype||'連結')+'</a>':'<span class="src" style="color:var(--muted)">尚無來源連結</span>')+'</div></article>'
+}
+load();
+</script>
+</body>
+</html>
